@@ -8,25 +8,15 @@
     <title>Grandi Scoperte Geografiche</title>
 </head>
 <body>
-    <!-- Navbar -->
     <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container-fluid">
-            <!-- Toggle button -->
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
-            <!-- Brand -->
             <a class="navbar-brand" href="#">
                 <img src="../../assets/img/logo.png" height="25" alt="Logo" loading="lazy" />
             </a>
-            <!-- Search form -->
-            <form class="d-none d-md-flex input-group w-auto my-auto">
-                <input autocomplete="off" type="search" class="form-control rounded" placeholder='Search (ctrl + "/" to focus)' style="min-width: 225px" />
-                <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
-            </form>
-            <!-- Right links -->
             <ul class="navbar-nav ms-auto d-flex flex-row">
-                <!-- Avatar -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                         <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle" height="22" alt="Avatar" loading="lazy" />
@@ -42,9 +32,8 @@
         <button onClick="darkmode()">Dark mode</button>
     </nav>
     
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
+    <div class="container-fluid content-container">
+        <div class="row w-100">
             <div class="col-lg-2 d-none d-lg-block">
                 <nav id="sidebarMenu" class="sidebar bg-white">
                     <div class="position-sticky">
@@ -63,15 +52,31 @@
                 </nav>
             </div>
             
-            <!-- Contenuto principale -->
-            <div class="col-lg-10">
+            <div class="col-lg-8 main-content">
                 <main class="container mt-5 pt-4">
-                    <h1>Benvenuto alle Grandi Scoperte Geografiche</h1>
-                    <p>Questa è una pagina dedicata alle grandi scoperte geografiche.</p>
+                    <h1 class="text-center">L'organizzazione delle colonie</h1>
+                    <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
                 </main>
             </div>
         </div>
     </div>
+    
     
     <script src="../../assets/js/scripts.js"></script>
     <script src="../../assets/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
