@@ -1,63 +1,101 @@
 body {
-  padding: 25px;
-  background-color: white;
-  color: black;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (min-width: 991.98px) {
-  main {
-      padding-left: 240px;
-  }
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-/* Sidebar */
 .sidebar {
+  width: 250px;
+  height: 100vh;
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
-  padding: 58px 0 0; /* Height of navbar */
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05), 0 2px 10px 0 rgba(0, 0, 0, 0.05);
-  width: 240px;
-  z-index: 600;
-  transition: all 0.3s;
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #343a40;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar .navbar-nav {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.sidebar .nav-link {
+  padding: 10px 20px;
+  color: #343a40;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Stili per la modalità scura */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .sidebar {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .nav-link {
+    color: #ffffff;
+}
+
+.dark-mode .nav-link:hover {
+    background-color: #333333;
+}
+
+/* Navbar scura */
+.dark-mode .navbar {
+    background-color: #343a40 !important;  /* Forza il background scuro della navbar */
+}
+
+.dark-mode .navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.dark-mode .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.dark-mode .navbar-nav .nav-link:hover {
+    background-color: #444444;
 }
 
 @media (max-width: 991.98px) {
   .sidebar {
+      position: relative;
       width: 100%;
+      height: auto;
   }
-}
-
-.sidebar .active {
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: calc(100vh - 48px);
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-}
-
-/* Navbar */
-.navbar {
-  transition: all 0.3s;
-}
-
-.content-container {
-  display: flex;
-  justify-content: center;
-}
-.main-content {
-  max-width: 800px;
-  width: 100%;
+  .content {
+      margin-left: 0;
+  }
 }
