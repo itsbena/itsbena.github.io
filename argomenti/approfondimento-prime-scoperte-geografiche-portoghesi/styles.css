@@ -1,3 +1,4 @@
+/* Stili generali */
 body {
   display: flex;
   height: 100vh;
@@ -5,11 +6,23 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.sidebar {
-  width: 250px;
-  height: 100vh;
+/* Navbar superiore */
+.navbar {
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  background-color: #f8f9fa;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: calc(100vh - 56px); /* Adatta all'altezza della finestra meno la navbar */
+  position: fixed;
+  top: 56px; /* Altezza della navbar superiore */
   left: 0;
   background-color: #f8f9fa;
   padding-top: 20px;
@@ -48,54 +61,72 @@ body {
   border-radius: 5px;
 }
 
+/* Contenuto principale */
 .content {
   margin-left: 250px;
+  margin-top: 60px; /* Spazio per la navbar superiore */
   padding: 20px;
   width: 100%;
 }
 
-/* Stili per la modalità scura */
+/* Modalità Scura */
 .dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+  background-color: #343a40 !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar {
+  background-color: #212529 !important;
+  color: #ffffff !important;  /* Cambia il colore del testo */
+}
+
+.dark-mode .navbar .navbar-nav .nav-link {
+  color: #ffffff !important;  /* Colore bianco per i link */
+}
+
+.dark-mode .navbar .navbar-nav .nav-link:hover {
+  background-color: #495057 !important;
+  color: #ffffff !important;  /* Colore bianco al passaggio del mouse */
 }
 
 .dark-mode .sidebar {
-    background-color: #1e1e1e;
+  background-color: #212529 !important;
 }
 
-.dark-mode .nav-link {
-    color: #ffffff;
+.dark-mode .sidebar .title,
+.dark-mode .sidebar .nav-link {
+  color: #ffffff !important;
 }
 
-.dark-mode .nav-link:hover {
-    background-color: #333333;
+.dark-mode .sidebar .nav-link:hover {
+  background-color: #495057 !important;
 }
 
-/* Navbar scura */
-.dark-mode .navbar {
-    background-color: #343a40 !important;  /* Forza il background scuro della navbar */
+
+/* Pulsante Dark Mode */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.dark-mode .navbar-toggler-icon {
-    background-color: #ffffff;
+.dark-mode-toggle span {
+  display: inline-block;
 }
 
-.dark-mode .navbar-nav .nav-link {
-    color: #ffffff;
-}
-
-.dark-mode .navbar-nav .nav-link:hover {
-    background-color: #444444;
-}
-
+/* Adattamenti per dispositivi piccoli */
 @media (max-width: 991.98px) {
   .sidebar {
       position: relative;
       width: 100%;
       height: auto;
+      top: 0;
   }
   .content {
       margin-left: 0;
+      margin-top: 80px; /* Più spazio per evitare sovrapposizioni */
   }
 }
+  
