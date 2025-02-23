@@ -7,8 +7,8 @@ body {
 
 /* Contenuto principale */
 .content {
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 130px;
+  margin-right: 130px;
   margin-top: 0px; /* Spazio per la navbar superiore */
   padding: 20px;
 }
@@ -33,6 +33,9 @@ body {
   color: #ffffff !important;  /* Colore bianco al passaggio del mouse */
 }
 
+.dark-mode .navbar-brand {
+  color: #ffffff !important; /* Colore bianco per il testo della navbar */
+}
 
 /* Pulsante Dark Mode */
 .dark-mode-toggle {
