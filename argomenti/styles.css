@@ -1,0 +1,63 @@
+/* Stili generali */
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenuto principale */
+.content {
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-top: 0px; /* Spazio per la navbar superiore */
+  padding: 20px;
+}
+
+/* Modalità Scura */
+.dark-mode {
+  background-color: #343a40 !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar {
+  background-color: #212529 !important;
+  color: #ffffff !important;  /* Cambia il colore del testo */
+}
+
+.dark-mode .navbar .navbar-nav .nav-link {
+  color: #ffffff !important;  /* Colore bianco per i link */
+}
+
+.dark-mode .navbar .navbar-nav .nav-link:hover {
+  background-color: #495057 !important;
+  color: #ffffff !important;  /* Colore bianco al passaggio del mouse */
+}
+
+
+/* Pulsante Dark Mode */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dark-mode-toggle span {
+  display: inline-block;
+}
+
+/* Adattamenti per dispositivi piccoli */
+@media (max-width: 991.98px) {
+  .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0;
+  }
+  .content {
+      margin-left: 0;
+      margin-top: 80px; /* Più spazio per evitare sovrapposizioni */
+  }
+}
+  

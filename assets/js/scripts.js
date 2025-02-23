@@ -7,7 +7,6 @@ function darkmode() {
   // Forza il ricalcolo dello stile
   setTimeout(() => {
     document.querySelector(".navbar").classList.toggle("dark-mode");
-    document.querySelector(".sidebar").classList.toggle("dark-mode");
   }, 10);
 
   // Cambia l'icona in base alla modalità
