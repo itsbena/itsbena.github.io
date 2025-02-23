@@ -6,89 +6,110 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/scripts.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo.png">
     <title>Grandi Scoperte Geografiche</title>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-    </nav>
-    <!-- Sidebar -->
-    <nav class="sidebar navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid flex-column align-items-center">
-            <div class="title">Grandi Scoperte Geografiche</div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/img/logo.png" alt="Logo" width="50" height="50">
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="sidebarMenu">
-                <ul class="navbar-nav flex-column w-100">
-                    <li class="nav-item"><a class="nav-link active" href="#">Website traffic</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Esplorazioni e navigatori -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Esplorazioni e navigatori</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="introduzione.html">Prime scoperte portoghesi</a></li>
+                            <li><a class="dropdown-item" href="../grandi_navigatori/index.html">Grandi navigatori</a></li>
+                            <li><a class="dropdown-item" href="../innovazioni_nautiche/index.html">Innovazioni nella navigazione</a></li>
+                        </ul>
+                    </li>
+                    <!-- Civiltà e conquista -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Civiltà e conquista</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../città_precolombiane/index.html">Città precolombiane</a></li>
+                            <li><a class="dropdown-item" href="../america/conquista.html">Conquista dell'America</a></li>
+                            <li><a class="dropdown-item" href="../america/prodotti_agricoli.html">Prodotti agricoli</a></li>
+                        </ul>
+                    </li>
+                    <!-- Conseguenze storiche -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conseguenze storiche</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../trattato_di_tordeillas.html">Trattato di Tordesillas</a></li>
+                            <li><a class="dropdown-item" href="../organizzazione_colonie_e_vicereami.html">Organizzazione delle colonie e vicereami</a></li>
+                            <li><a class="dropdown-item" href="../tratta_schiavi.html">Tratta degli schiavi</a></li>
+                        </ul>
+                    </li>
                 </ul>
+                <!-- Dark Mode -->
+                <div class="d-flex">
+                    <button id="darkModeBtn" class="dark-mode-toggle" type="button" onclick="darkmode()">
+                        <span id="darkModeIcon">☀️</span>
+                    </button>
+                </div>                
             </div>
-            <button id="darkModeBtn" class="dark-mode-toggle" onclick="darkmode()">
-                <span id="darkModeIcon">☀️</span>
-            </button>            
         </div>
     </nav>
     
     <!-- Contenuto -->
     <div class="content">
         <h1 class="text-center">Le prime scoperte geografiche dei portoghesi</h1>
-        <h3>Introduzione</h3>
-        <p>L’epoca delle scoperte, sviluppatasi tra il <strong>XV</strong> e il <strong>XVI</strong> secolo, rappresenta un periodo di straordinaria espansione marittima e culturale. Il <strong>Portogallo</strong>, grazie a innovazioni tecnologiche, al sostegno della monarchia e a una spiccata vocazione all’esplorazione, fu protagonista nel tracciare nuove rotte e nel mettere in contatto mondi fino ad allora isolati. Queste imprese non solo rivoluzionarono il commercio globale, ma influenzarono anche gli equilibri politici, culturali e religiosi del tempo.</p>
 
+        <h2>Contesto storico e innovazioni</h2>
+
+        <h5>Il Ruolo dell’Infante D. Henrique e la Scuola di Sagres</h5>
+        
+        <p>L’Infante D. Henrique, noto anche come <strong>Enrico il Navigatore</strong>, fu fondamentale 
+        nell’organizzazione e nel finanziamento delle prime spedizioni. La sua scuola di Sagres, pur
+        essendo più un centro di studi pratici che una vera istituzione accademica, favorì lo sviluppo di
+        <strong>nuove tecniche di navigazione</strong>, cartografia e conoscenze geografiche che permisero di affrontare 
+        gli oceani in modo più sicuro e preciso.</p>
+
+        <h5>Innovazioni tecnologiche</h5>
+        
+        <p>
+          L’adozione dell’ <strong>astrolabio</strong>, delle <strong>carovane</strong> e, 
+          successivamente, delle <strong>navi caravella</strong> permise ai navigatori 
+          portoghesi di orientarsi in mare aperto. L’uso della <strong>volta del mare</strong>, 
+          una tecnica che sfruttava i venti atlantici, fu essenziale per i lunghi viaggi verso 
+          ovest e sud lungo la costa africana.
+        </p>
+
+        <!-- Navigazione tra le pagine -->
         <nav aria-label="...">
-          <ul class="pagination">
-            <li class="page-item disabled">
-              <a class="page-link">Precedente</a>
-            </li>
-            <li class="page-item active" aria-current="page">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">Successiva</a>
-            </li>
-          </ul>
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="introduzione.html">Precedente</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="introduzione.html">1</a>
+              </li>
+              <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href="principali_scoperte_e_rotte.html">3</a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href="impatto_e_conseguenze.html">4</a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href="conclusioni.html">5</a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href="principali_scoperte_e_rotte.html">Successiva</a>
+              </li>
+            </ul>
         </nav>
     </div>
-
 </body>
 </html>

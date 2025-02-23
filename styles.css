@@ -1,0 +1,41 @@
+.content {
+    margin-left: 450px;
+    margin-right: 450px;
+    padding: 20px;
+}
+
+/* Modalità scura */
+.dark-mode {
+    background-color: #202123 !important; /* Sfondo scuro */
+    color: #f5f5f5 !important; /* Testo chiaro */
+}
+
+.dark-mode .navbar {
+    background-color: #2c2f33 !important;
+    color: #d1d5db !important;
+}
+
+.dark-mode .navbar .navbar-nav .nav-link {
+    color: #d1d5db !important;
+}
+
+.dark-mode .card {
+    background-color: #2c2f33 !important;
+    color: #d1d5db !important;
+}
+
+.dark-mode .table {
+    background-color: #2c2f33 !important;
+    color: #d1d5db !important;
+    border-color: #3c4043 !important;
+}
+
+/* Pulsante Dark mode */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #10a37f !important;
+}

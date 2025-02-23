@@ -6,89 +6,158 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/js/scripts.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo.png">
     <title>Grandi Scoperte Geografiche</title>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-    </nav>
-    <!-- Sidebar -->
-    <nav class="sidebar navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid flex-column align-items-center">
-            <div class="title">Grandi Scoperte Geografiche</div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../assets/img/logo.png" alt="Logo" width="50" height="50">
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="sidebarMenu">
-                <ul class="navbar-nav flex-column w-100">
-                    <li class="nav-item"><a class="nav-link active" href="#">Website traffic</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Esplorazioni e navigatori -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Esplorazioni e navigatori</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="introduzione.html">Prime scoperte portoghesi</a></li>
+                            <li><a class="dropdown-item" href="../grandi_navigatori/index.html">Grandi navigatori</a></li>
+                            <li><a class="dropdown-item" href="../innovazioni_nautiche/index.html">Innovazioni nella navigazione</a></li>
+                        </ul>
+                    </li>
+                    <!-- Civiltà e conquista -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Civiltà e conquista</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../città_precolombiane/index.html">Città precolombiane</a></li>
+                            <li><a class="dropdown-item" href="../america/conquista.html">Conquista dell'America</a></li>
+                            <li><a class="dropdown-item" href="../america/prodotti_agricoli.html">Prodotti agricoli</a></li>
+                        </ul>
+                    </li>
+                    <!-- Conseguenze storiche -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conseguenze storiche</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../trattato_di_tordeillas.html">Trattato di Tordesillas</a></li>
+                            <li><a class="dropdown-item" href="../organizzazione_colonie_e_vicereami.html">Organizzazione delle colonie e vicereami</a></li>
+                            <li><a class="dropdown-item" href="../tratta_schiavi.html">Tratta degli schiavi</a></li>
+                        </ul>
+                    </li>
                 </ul>
+                <!-- Dark Mode -->
+                <div class="d-flex">
+                    <button id="darkModeBtn" class="dark-mode-toggle" type="button" onclick="darkmode()">
+                        <span id="darkModeIcon">☀️</span>
+                    </button>
+                </div>                
             </div>
-            <button id="darkModeBtn" class="dark-mode-toggle" onclick="darkmode()">
-                <span id="darkModeIcon">☀️</span>
-            </button>            
         </div>
     </nav>
     
     <!-- Contenuto -->
     <div class="content">
         <h1 class="text-center">Le prime scoperte geografiche dei portoghesi</h1>
-        <h3>Introduzione</h3>
-        <p>L’epoca delle scoperte, sviluppatasi tra il <strong>XV</strong> e il <strong>XVI</strong> secolo, rappresenta un periodo di straordinaria espansione marittima e culturale. Il <strong>Portogallo</strong>, grazie a innovazioni tecnologiche, al sostegno della monarchia e a una spiccata vocazione all’esplorazione, fu protagonista nel tracciare nuove rotte e nel mettere in contatto mondi fino ad allora isolati. Queste imprese non solo rivoluzionarono il commercio globale, ma influenzarono anche gli equilibri politici, culturali e religiosi del tempo.</p>
 
+        <h2>Principali scoperte e rotte</h2>
+
+        <h5>Le prime esplorazioni atlantiche e insulari</h5>
+        
+        <p>
+          <strong>Isole Madeira</strong>, <strong>Azzorre</strong> e <strong>Capo Verde</strong>: 
+          Già nel <strong>XV</strong> secolo, i portoghesi colonizzarono queste isole, 
+          che divennero punti di sosta fondamentali per le successive spedizioni transatlantiche.
+        </p>
+        <p>
+          <strong>Importanza</strong>: Queste isole non solo rafforzarono il controllo portoghese 
+          sull’Oceano Atlantico, ma fungevano anche da “laboratorio” per sperimentare 
+          <strong>tecniche di navigazione</strong> e di gestione dei viaggi in mare.
+        </p>
+
+        <h5>La rotta africana e il passaggio del capo di buona speranza</h5>
+        
+        <p>
+          <strong>Bartolomeo Dias</strong> (1487-1488): La spedizione di Dias fu la prima 
+          a circumnavigare l’Africa, raggiungendo il famoso <strong>"Cabo da Buona Speranza”</strong>. 
+          Questa impresa dimostrò che era possibile superare il continente africano per raggiungere 
+          l’Oceano Indiano.
+        </p>
+        <p>
+          <strong>Conseguenze</strong>: L’apertura di questa rotta rappresentò un passaggio decisivo 
+          per il commercio con l’<strong>Asia</strong>, spianando la via a future spedizioni verso l’Est.
+        </p>
+        
+        <h5>L’Apertura della Rotta per l’India</h5>
+
+        <p>
+          <strong>Vasco da Gama</strong> (1497-1499): La spedizione di Vasco da Gama fu la prima 
+          a collegare l’<strong>Europa</strong> all’<strong>Asia</strong> via mare. Attraversando il Capo di 
+          Buona Speranza, i portoghesi raggiunsero le coste indiane, stabilendo relazioni commerciali 
+          dirette e aprendo la strada a un nuovo modello di commercio globale.
+        </p>
+        <p>
+          <strong>Impatto</strong>: L’apertura di questa rotta fece diminuire la dipendenza dalle vie terrestri 
+          controllate da intermediari, consolidando il dominio portoghese nel commercio delle spezie e di altri 
+          beni preziosi.
+        </p>
+        
+        <h5>La Scoperta del Nuovo Mondo</h5>
+
+        <p>
+          <strong>Pedro Álvares Cabral</strong> (1500): Nel contesto della ricerca di nuove rotte 
+          per l’India, la spedizione guidata da Cabral raggiunse accidentalmente le coste dell’odierno 
+          <strong>Brasile</strong>. Sebbene la scoperta non fosse l’obiettivo primario, essa portò alla creazione 
+          di uno dei più importanti imperi coloniali europei.
+        </p>
+        <p>
+          <strong>Conseguenze</strong>: La scoperta del Brasile, con la sua abbondanza di risorse naturali, cambiò 
+          l’equilibrio geopolitico e contribuì alla formazione di un vasto <strong>impero coloniale portoghese</strong>.
+        </p>
+        
+        <h5>L’Espansione in Asia</h5>
+
+        <p>
+          <strong>Afonso de Albuquerque</strong>: Le sue campagne nel <strong>Mediterraneo</strong> orientale 
+          e nell’<strong>Oceano Indiano</strong> contribuirono a stabilire una rete di fortezze e avamposti, 
+          tra cui <strong>Goa</strong> in India, <strong>Malacca</strong> in Malesia e <strong>Macao</strong> in Cina.
+        </p>
+        <p>
+          <strong>Obiettivo</strong>: Queste conquiste non avevano solo scopi commerciali, ma anche strategici, 
+          finalizzati a controllare le rotte marittime e a diffondere la cultura e la religione portoghesi.
+        </p>
+        
+
+        <!-- Navigazione tra le pagine -->
         <nav aria-label="...">
-          <ul class="pagination">
-            <li class="page-item disabled">
-              <a class="page-link">Precedente</a>
-            </li>
-            <li class="page-item active" aria-current="page">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">Successiva</a>
-            </li>
-          </ul>
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="contesto_storico_e_innovazioni.html">Precedente</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="introduzione.html">1</a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href="contesto_storico_e_innovazioni.html">2</a>
+              </li>
+              <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href="impatto_e_conseguenze.html">4</a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href="conclusioni.html">5</a>
+              </li>
+              <li class="page-item">
+                  <a class="page-link" href="impatto_e_conseguenze.html">Successivo</a>
+              </li>
+            </ul>
         </nav>
     </div>
-
 </body>
 </html>
