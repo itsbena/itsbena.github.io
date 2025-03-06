@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
+    <title>Grandi Scoperte Geografiche</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo" width="50" height="50">
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Esplorazioni e navigatori -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Esplorazioni e navigatori</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="prime_scoperte_geografiche_portoghesi.html">Prime scoperte portoghesi</a></li>
+                            <li><a class="dropdown-item" href="innovazioni_nautiche.html">Innovazioni nella navigazione</a></li>
+                            <li><a class="dropdown-item" href="#">Grandi navigatori</a></li>
+                        </ul>
+                    </li>
+                    <!-- Civiltà e conquista -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Civiltà e conquista</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="città_precolombiane.html">Città precolombiane</a></li>
+                            <li><a class="dropdown-item" href="conquista_america_e_prodotti_agricoli.html">Conquista dell'America e i prodotti agricoli</a></li>
+                        </ul>
+                    </li>
+                    <!-- Conseguenze storiche -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Conseguenze storiche</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="trattato_di_tordeillas.html">Trattato di Tordesillas</a></li>
+                            <li><a class="dropdown-item" href="organizzazione_colonie_e_vicereami.html">Organizzazione delle colonie e vicereami</a></li>
+                            <li><a class="dropdown-item" href="tratta_schiavi.html">Tratta degli schiavi</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Dark Mode -->
+                <div class="d-flex">
+                    <button id="darkModeBtn" class="dark-mode-toggle" type="button" onclick="darkmode()">
+                        <span id="darkModeIcon">☀️</span>
+                    </button>
+                </div>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenuto -->
+    <div class="container mt-5">
+        <h1 class="text-center">I grandi navigatori</h1>
+
+        <!-- Vasco da Gama -->
+        <div class="row align-items-center my-5">
+            <div class="col-md-6 text-center">
+                <img src="../assets/img/argomenti/grandi_navigatori/vasco_da_gama.png" class="img-fluid w-50" alt="Vasco da Gama">
+            </div>
+            <div class="col-md-6">
+                <h2>Vasco da Gama</h2>
+                <h5>Punto chiave</h5>
+                <p>Ha aperto la rotta diretta verso l’India aggirando l’Africa.</p>
+                <h5>Perché è importante?</h5>
+                <p>Grazie al suo viaggio, il Portogallo è riuscito a commerciare direttamente con l’Oriente, rivoluzionando gli scambi.</p>
+            </div>
+        </div>
+
+        <!-- Ferdinando Magellano -->
+        <div class="row align-items-center my-5">
+            <div class="col-md-6 text-center">
+                <img src="../assets/img/argomenti/grandi_navigatori/magellano.jpg" class="img-fluid w-50" alt="Ferdinando Magellano">
+            </div>
+            <div class="col-md-6">
+                <h2>Ferdinando Magellano</h2>
+                <h5>Punto chiave</h5>
+                <p>Ha organizzato la prima spedizione per circumnavigare il globo.</p>
+                <h5>Perché è importante?</h5>
+                <p>Anche se lui non completò il viaggio (morì nelle Filippine), la sua impresa ha dimostrato che la Terra è rotonda e ha aperto nuove rotte per il commercio.</p>
+            </div>
+        </div>
+
+        <!-- Amerigo Vespucci -->
+        <div class="row align-items-center my-5">
+            <div class="col-md-6 text-center">
+                <img src="../assets/img/argomenti/grandi_navigatori/amerigo_vespucci.jpg" class="img-fluid w-50" alt="Amerigo Vespucci">
+            </div>
+            <div class="col-md-6">
+                <h2>Amerigo Vespucci</h2>
+                <h5>Punto chiave</h5>
+                <p>Ha capito che le terre scoperte da Colombo non facevano parte dell’Asia, ma erano un “Nuovo Mondo”.</p>
+                <h5>Perché è importante?</h5>
+                <p>Il continente americano prende il suo nome, perché i suoi viaggi hanno contribuito a riconoscere l’esistenza di un nuovo continente.</p>
+            </div>
+        </div>
+
+        <!-- Cristoforo Colombo -->
+        <div class="row align-items-center my-5">
+            <div class="col-md-6 text-center">
+                <img src="../assets/img/argomenti/grandi_navigatori/colombo.jpg" class="img-fluid w-50" alt="Cristoforo Colombo">
+            </div>
+            <div class="col-md-6">
+                <h2>Cristoforo Colombo</h2>
+                <h5>Punto chiave</h5>
+                <p>Nel 1492, cercando una rotta verso l’Asia, ha scoperto il continente americano.</p>
+                <h5>Perché è importante?</h5>
+                <p>Il suo viaggio ha segnato l’inizio delle esplorazioni e delle successive colonizzazioni europee nelle Americhe.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
