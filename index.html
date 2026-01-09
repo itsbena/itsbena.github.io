@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    <title>Cookie & Tracker Inspector</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- I cookie -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            I cookie
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pagine/cookie.html#">Cosa sono e a cosa servono</a></li>
+                            <li><a class="dropdown-item" href="pagine/cookie.html#tipi-di-cookie">I tipi di cookie</a></li>
+                        </ul>
+                    </li>
+                    <!-- I tracker -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagine/tracker.html">I tracker</a>
+                    </li>
+                    <!-- Redirect a siti terzi -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagine/richiesta_domini_terzi.html">Redirect a siti terzi</a>
+                    </li>
+                </ul>
+                <!-- Dark Mode -->
+                <div class="d-flex">
+                    <button id="darkModeBtn" class="dark-mode-toggle" type="button" onclick="darkmode()">
+                        <span id="darkModeIcon">☀️</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenuto -->
+    <div class="container my-5">
+    <h1 class="text-center mb-4">Benvenuti in cookie & Tracker Inspector</h1>
+    <p class="text-center mb-5">
+        Questo sito educativo esplora il mondo dei cookie, dei tracker e delle richieste a domini terzi,
+        spiegando come funzionano e il loro impatto sulla privacy secondo il GDPR.
+    </p>
+
+    <div class="row g-4">
+        <!-- Card Cookie -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/img/cookies.webp" class="card-img-top" alt="Immagine Cookie">
+                <div class="card-body text-center">
+                    <h5 class="card-title">I Cookie</h5>
+                    <p class="card-text">
+                        Scopri cosa sono i cookie, a cosa servono e quali tipi esistono.
+                    </p>
+                    <a href="pagine/cookie.html" class="btn btn-primary">Esplora</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Tracker -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/img/tracker.jpg" class="card-img-top" alt="Immagine Tracker">
+                <div class="card-body text-center">
+                    <h5 class="card-title">I Tracker</h5>
+                    <p class="card-text">
+                        Capisci come i tracker monitorano le attività online degli utenti.
+                    </p>
+                    <a href="pagine/tracker.html" class="btn btn-primary">Esplora</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Siti Terzi -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="assets/img/internet.jpg" class="card-img-top" alt="Immagine Siti Terzi">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Siti Terzi</h5>
+                    <p class="card-text">
+                        Approfondisci le richieste a domini esterni e i rischi per la privacy.
+                    </p>
+                    <a href="pagine/richiesta_domini_terzi.html" class="btn btn-primary">Esplora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

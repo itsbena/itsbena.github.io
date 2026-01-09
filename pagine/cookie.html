@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
+    <title>Cookie & Tracker Inspector</title>
+    <!-- STILE SFONDO -->
+    <style>
+        body {
+            background-image: url("../assets/img/cookies.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo.png" alt="Logo" width="50" height="50">
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- I cookie -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">I cookie</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cosa sono e a cosa servono</a></li>
+                            <li><a class="dropdown-item" href="#tipi-di-cookie">I tipi di cookie</a></li>
+                        </ul>
+                    </li>
+                    <!-- I tracker -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tracker.html">I tracker</a>
+                    </li>
+                    <!-- Redirect a siti terzi -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="richiesta_domini_terzi.html">Redirect a siti terzi</a>
+                    </li>
+                </ul>
+                <!-- Dark Mode -->
+                <div class="d-flex">
+                    <button id="darkModeBtn" class="dark-mode-toggle" type="button" onclick="darkmode()">
+                        <span id="darkModeIcon">☀️</span>
+                    </button>
+                </div>                
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Contenuto -->
+    <div class="content">
+        <h1 class="text-center">I cookie</h1>
+
+        <h2>Cosa sono i cookie?</h2>
+        <p>
+            I cookie sono piccoli file di testo che un sito web invia al tuo computer, smartphone o tablet quando lo visiti. Questi file vengono memorizzati sul tuo dispositivo dal browser e possono essere letti di nuovo dal sito ogni volta che ci ritorni.
+            L’uso dei cookie è regolato da leggi europee, come il GDPR (General Data Protection Regulation, cioè Regolamento Generale sulla Protezione dei Dati), che servono a proteggere la privacy degli utenti. Per questo motivo i siti devono informare le persone e chiedere il consenso prima di utilizzare alcuni tipi di cookie.
+            Volendo puoi rifiutare i cookie o configurare il tuo browser per rifiutarli o accettare solo alcuni tipi.
+            Se li disattivi tutti, alcuni siti potrebbero non funzionare bene (per esempio non manterrebbero il login o le impostazioni).
+        </p>
+
+        <h2>A cosa servono?</h2>
+        
+        <p>
+            I cookie hanno diverse funzioni utili quando navighi su Internet
+        </p>
+
+        <h5>1. Per far funzionare correttamente i siti</h5>
+            
+        <p>
+            <br>Molti siti usano i cookie per ricordarsi di te mentre navighi.<br>Per esempio:
+            <ul>
+                <li>Rimani loggato su un sito dopo aver fatto il login.</li>
+                <li>Il sito ricorda cosa hai messo nel carrello di un negozio online.</li>
+                <li>Il sito mantiene le tue scelte di visualizzazione, come lingua o tema scuro/chiaro.</li>
+            </ul>
+        </p>
+        
+        <h5>2. Per migliorare l'esperienza</h5>
+        
+        <p>
+            I siti possono usare i cookie per capire come li usi:
+            <ul>
+                <li>quali pagine visiti più spesso;</li>
+                <li>quanto tempo resti su un contenuto;</li>
+                <li>quale parte del sito ti interessa di più.</li>
+            </ul>
+        </p>
+
+        <h5>3. Per personalizzare pubblicità e consigli</h5>
+
+        <p>
+            Alcuni cookie raccolgono informazioni su ciò che cerchi o guardi online. 
+            Questi servono a mostrarti pubblicità e offerte più “vicine” ai tuoi interessi. 
+        </p> 
+        
+        <h2 id="tipi-di-cookie">Tipi di cookie</h2>
+
+        <p>
+            <ul>
+                <li><strong>Cookie tecnici: </strong>sono fondamentali per far funzionare correttamente il sito e per fornire i servizi che l'utente richiede, come ad esempio la navigazione o alcune funzioni specifiche. Per questi particolari cookie, non è necessario ottenere il consenso dell'utente, ma è importante che l'utente sia comunque informato sulla loro presenza tramite un'apposita informativa sui cookie.</li>
+                <li><strong>Cookie analitici o di statistica: </strong>accolgono informazioni su come le persone utilizzano il sito, come ad esempio quanti visitatori ci sono o quali sono le pagine più popolari. Se questi dati non possono essere collegati a una persona specifica e sono gestiti direttamente dal sito stesso, allora non è necessario chiedere il permesso degli utenti. Tuttavia, se questi dati permettono di riconoscere chi sono gli utenti o se sono gestiti da altre aziende, allora è obbligatorio chiedere il consenso degli utenti prima di raccogliere questi dati. I cookie statistici di terze parti o quelli che identificano gli utenti richiedono quindi il consenso degli utenti per poter essere utilizzati.</li>
+                <li><strong>Cookie di proliferazione: </strong>servono a creare profili e mostrare annunci pubblicitari personalizzati tengono traccia di come l'utente utilizza un sito web. Questo tipo di cookie, che spesso funziona tramite servizi di altre aziende, ha un impatto maggiore sulla privacy degli utenti. Per questo motivo, è necessario ottenere sempre il consenso esplicito degli utenti prima di utilizzare i cookie di profilazione e pubblicità. Il consenso degli utenti è fondamentale per garantire che le loro informazioni siano trattate in modo trasparente e rispettoso. I cookie di profilazione e pubblicità possono essere utili per mostrare annunci più pertinenti, ma è importante che gli utenti siano consapevoli di come vengono utilizzate le loro informazioni e che abbiano il controllo su ciò che accade.</li>
+            </ul>
+        </p>         
+
+        <p class="crediti">A cura di Marco Benatelli, Alberto Birocco, Cristian Cagnina e Leonardo De Lorenzis</p>
+        
+    </div>
+</body>
+</html>

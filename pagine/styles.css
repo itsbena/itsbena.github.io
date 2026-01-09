@@ -1,0 +1,148 @@
+.content {
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 20px;
+}
+
+.crediti {
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #888888;
+}
+
+/* Stile dei titoli */
+h1 {
+  margin-bottom: 30px;
+  font-family: 'Merriweather', serif;
+  font-size: 36px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+}
+
+h5 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* Stile del testo dei paragrafi */
+p {
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Modalità scura */
+.dark-mode {
+  background-color: #202123 !important; /* Sfondo scuro */
+  color: #f5f5f5 !important; /* Testo chiaro */
+}
+
+.dark-mode h1 {
+  color: #ffffff; /* Titolo bianco */
+}
+
+.dark-mode h2 {
+  color: #e0e0e0; /* Sottotitolo grigio chiaro */
+}
+
+.dark-mode h5 {
+  color: #d0d0d0; /* Titoli secondari grigio chiaro */
+}
+
+.dark-mode p {
+  color: #f5f5f5; /* Testo paragrafo bianco */
+}
+
+.dark-mode .navbar {
+  background-color: #2c2f33 !important;
+  color: #d1d5db !important;
+}
+
+.dark-mode .navbar .navbar-nav .nav-link {
+  color: #d1d5db !important;
+}
+
+.dark-mode .table {
+  background-color: #2c2f33 !important;
+  color: #d1d5db !important;
+  border-color: #3c4043 !important;
+}
+
+.dark-mode .crediti {
+  color: #d1d5db; /* Colore chiaro in modalità scura */
+}
+
+/* =========================
+   Dropdown menu navbar - Dark Mode
+========================= */
+.dark-mode .navbar .dropdown-menu {
+  background-color: #2c2f33; /* Sfondo scuro */
+  border: 1px solid #3c4043; /* Bordo leggermente più chiaro */
+}
+
+.dark-mode .navbar .dropdown-item {
+  color: #d1d5db; /* Testo chiaro */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dark-mode .navbar .dropdown-item:hover,
+.dark-mode .navbar .dropdown-item:focus {
+  background-color: #10a37f; /* Evidenziazione al passaggio */
+  color: #ffffff; /* Testo bianco sull'evidenziazione */
+}
+
+body.dark-mode .content {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+}
+
+/* Modalità chiara */
+body {
+  background-color: #ffffff; /* Sfondo bianco */
+  color: #333333; /* Testo grigio scuro */
+}
+
+h1 {
+  color: #000000; /* Titolo nero */
+}
+
+h2 {
+  color: #222222; /* Sottotitolo grigio scuro */
+}
+
+h5 {
+  color: #444444; /* Titoli secondari grigio medio */
+}
+
+p {
+  color: #555555; /* Testo paragrafo grigio chiaro */
+}
+
+/* Pulsante Dark mode */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #10a37f !important;
+}
+
+/* Adattamenti per dispositivi piccoli */
+@media (max-width: 991.98px) {
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

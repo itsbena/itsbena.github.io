@@ -1,0 +1,227 @@
+/* =========================
+   Layout contenuto
+========================= */
+.content {
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 20px;
+}
+
+/* =========================
+   Crediti
+========================= */
+.crediti {
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #888888;
+}
+
+/* =========================
+   Titoli
+========================= */
+h1 {
+  margin-bottom: 30px;
+  font-family: 'Merriweather', serif;
+  font-size: 36px;
+  color: #000000;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #222222;
+}
+
+h5 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+/* =========================
+   Immagini card - dimensione uniforme
+========================= */
+.card-img-top {
+  height: 200px;          /* Altezza fissa per tutte le immagini */
+  width: 100%;             /* Larghezza piena della card */
+  object-fit: cover;       /* Ritaglia proporzionalmente senza deformare */
+  border-top-left-radius: 12px;  /* Mantiene gli angoli arrotondati */
+  border-top-right-radius: 12px;
+}
+
+/* =========================
+   Testo paragrafi
+========================= */
+p {
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* =========================
+   Tema chiaro (default)
+========================= */
+body {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* =========================
+   Card - tema chiaro
+========================= */
+.card {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-title {
+  color: #222222;
+}
+
+.card-text {
+  color: #555555;
+}
+
+.card .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   Tema scuro
+========================= */
+.dark-mode {
+  background-color: #202123 !important;
+  color: #f5f5f5 !important;
+}
+
+/* Titoli in dark mode */
+.dark-mode h1 {
+  color: #ffffff;
+}
+
+.dark-mode h2 {
+  color: #e0e0e0;
+}
+
+.dark-mode h5 {
+  color: #d0d0d0;
+}
+
+.dark-mode p {
+  color: #f5f5f5;
+}
+
+/* Navbar dark */
+.dark-mode .navbar {
+  background-color: #2c2f33 !important;
+  color: #d1d5db !important;
+}
+
+.dark-mode .navbar .navbar-nav .nav-link {
+  color: #d1d5db !important;
+}
+
+/* Tabelle dark */
+.dark-mode .table {
+  background-color: #2c2f33 !important;
+  color: #d1d5db !important;
+  border-color: #3c4043 !important;
+}
+
+/* Crediti dark */
+.dark-mode .crediti {
+  color: #d1d5db;
+}
+
+/* =========================
+   Card - tema scuro
+========================= */
+.dark-mode .card {
+  background-color: #2c2f33;
+  color: #f5f5f5;
+  border: 1px solid #3c4043;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .card-title {
+  color: #ffffff;
+}
+
+.dark-mode .card-text {
+  color: #d1d5db;
+}
+
+.dark-mode .card .btn-primary {
+  background-color: #10a37f;
+  border-color: #10a37f;
+  color: #ffffff;
+}
+
+.dark-mode .card .btn-primary:hover {
+  background-color: #0e8c6c;
+  border-color: #0e8c6c;
+}
+
+.dark-mode .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* =========================
+   Dropdown menu navbar - Dark Mode
+========================= */
+.dark-mode .navbar .dropdown-menu {
+  background-color: #2c2f33; /* Sfondo scuro */
+  border: 1px solid #3c4043; /* Bordo leggermente più chiaro */
+}
+
+.dark-mode .navbar .dropdown-item {
+  color: #d1d5db; /* Testo chiaro */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dark-mode .navbar .dropdown-item:hover,
+.dark-mode .navbar .dropdown-item:focus {
+  background-color: #10a37f; /* Evidenziazione al passaggio */
+  color: #ffffff; /* Testo bianco sull'evidenziazione */
+}
+
+/* =========================
+   Pulsante Dark Mode
+========================= */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #10a37f !important;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 991.98px) {
+  .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
