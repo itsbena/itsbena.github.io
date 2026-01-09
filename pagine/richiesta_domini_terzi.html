@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
     <title>Cookie & Tracker Inspector</title>
-    <!-- STILE SFONDO -->
+
     <style>
         body {
             background-image: url("../assets/img/internet.jpg");
@@ -18,17 +18,18 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
-
         .content {
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.88);
+            padding: 35px;
             border-radius: 15px;
             margin: 30px;
         }
     </style>
 </head>
+
 <body>
-    <!-- Navbar -->
+
+<!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
@@ -65,44 +66,48 @@
             </div>
         </div>
     </nav>
-    
-    <!-- Contenuto -->
-    <div class="content">
-        <h1 class="text-center">Richieste a domini di terze parti</h1>
 
-        
+<!-- Contenuto -->
+<div class="content">
 
-        <p>
-            Quando un utente visita un sito web, il browser non si limita a comunicare solo con il
-            dominio principale del sito (ad esempio www.sito.it), ma può inviare richieste anche a
-            domini terzi, cioè a domini esterni gestiti da aziende o servizi diversi dal proprietario del sito
-            visitato. Queste comunicazioni vengono chiamate richieste a domini terzi e sono molto
-            comuni nella navigazione su Internet.
-            <br>Le richieste a domini terzi avvengono perché molti siti web utilizzano contenuti e strumenti
-            forniti da servizi esterni. Tra questi troviamo immagini, video, file audio, caratteri di scrittura
-            (font), mappe interattive, sistemi di pagamento, moduli di contatto, strumenti di analisi del
-            traffico e banner pubblicitari. <br>Per caricare correttamente questi elementi, il sito deve
-            collegarsi ai server dei fornitori esterni che li mettono a disposizione.
-            <br>Le richieste a domini terzi sono utili perché permettono ai siti web di offrire servizi avanzati
-            senza doverli sviluppare da zero. Grazie a questi strumenti esterni, un sito può essere più
-            veloce da realizzare, più funzionale e più ricco di contenuti. <br>Inoltre, i servizi di terze parti
-            aiutano i gestori dei siti a capire come vengono usate le pagine, ad esempio attraverso
-            statistiche sulle visite, sul tempo di permanenza o sulle pagine più visualizzate.
-            Allo stesso tempo, però, le richieste a domini terzi possono avere un impatto sulla privacy
-            degli utenti. <br>Quando il browser comunica con un dominio esterno, alcune informazioni
-            tecniche vengono automaticamente condivise, come l’indirizzo IP, il tipo di browser, il
-            sistema operativo o la lingua impostata. In alcuni casi, questi dati possono essere utilizzati
-            per riconoscere l’utente e seguire la sua navigazione su più siti diversi, soprattutto quando si
-            tratta di servizi di pubblicità o profilazione.
-            <br>Per questo motivo, le leggi sulla protezione dei dati, come il Regolamento Generale sulla
-            Protezione dei Dati (GDPR), stabiliscono che i siti web devono informare chiaramente gli
-            utenti sull’uso di servizi di terze parti. In molti casi è necessario chiedere il consenso prima di
-            attivare richieste a domini terzi che non sono strettamente necessarie, in particolare quelle
-            legate alla pubblicità personalizzata o al tracciamento.
-        </p>
+    <h1 class="text-center mb-4">Richieste a domini di terze parti</h1>
 
-        <p class="crediti">A cura di Marco Benatelli, Alberto Birocco, Cristian Cagnina e Leonardo De Lorenzis</p>
-        
-    </div>
+    <p>
+       Quando un utente visita un sito web, il browser non si limita a comunicare solo con il dominio principale del sito (ad esempio www.sito.it), 
+       ma può inviare richieste anche a domini terzi, cioè a domini esterni gestiti da aziende o servizi diversi dal proprietario del sito visitato. 
+       Queste comunicazioni vengono chiamate <strong>richieste a domini terzi</strong> e sono molto comuni nella navigazione su Internet.
+    </p>
+
+    <hr>
+
+    <h3>Perché avvengono le richieste a domini terzi?</h3>
+    <p>
+        Le richieste a domini terzi avvengono perché molti siti web utilizzano contenuti e strumenti forniti da servizi esterni. 
+        <br>Tra questi troviamo immagini, video, file audio, caratteri di scrittura (font), mappe interattive, sistemi di pagamento, moduli di contatto, strumenti di analisi del traffico e banner pubblicitari.
+        <br>Le richieste a domini terzi sono utili perché permettono ai siti web di offrire servizi avanzati senza doverli sviluppare da zero. 
+        <br>Grazie a questi strumenti esterni, un sito può essere più veloce da realizzare, più funzionale e più ricco di contenuti.
+        <br>Inoltre, i servizi di terze parti aiutano i gestori dei siti a capire come vengono usate le pagine, ad esempio attraverso statistiche sulle visite, sul tempo di permanenza o sulle pagine più visualizzate.
+    </p>
+
+    <hr class="my-4">
+
+    <h3>Impatto sulla privacy</h3>
+    <p>
+        Allo stesso tempo, però, le richieste a domini terzi possono avere un impatto sulla privacy degli utenti.
+        <br>Quando il browser comunica con un dominio esterno, alcune informazioni tecniche vengono automaticamente condivise, come l’indirizzo IP, il tipo di browser, il sistema operativo o la lingua impostata. 
+        In alcuni casi, questi dati possono essere utilizzati per riconoscere l’utente e seguire la sua navigazione su più siti diversi, soprattutto quando si tratta di servizi di pubblicità o profilazione.
+        <br>Per questo motivo, le leggi sulla protezione dei dati, come il Regolamento Generale sulla Protezione dei Dati (GDPR), stabiliscono 
+        che i siti web devono informare chiaramente gli utenti sull’uso di servizi di terze parti. In molti casi è necessario chiedere il consenso prima di attivare richieste a domini terzi che non 
+        sono strettamente necessarie, in particolare quelle legate alla pubblicità personalizzata o al tracciamento.
+
+
+    </p>
+
+    <p class="crediti mt-4">
+        A cura di Marco Benatelli, Alberto Birocco, Cristian Cagnina e Leonardo De Lorenzis
+    </p>
+
+</div>
+
 </body>
 </html>

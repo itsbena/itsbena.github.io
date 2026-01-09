@@ -1,15 +1,11 @@
-/* =========================
-   Layout contenuto
-========================= */
+/* Layout contenuto */
 .content {
   margin-left: 250px;
   margin-right: 250px;
   padding: 20px;
 }
 
-/* =========================
-   Crediti
-========================= */
+/* Crediti */
 .crediti {
   margin-top: 50px;
   font-family: 'Roboto', sans-serif;
@@ -18,9 +14,7 @@
   color: #888888;
 }
 
-/* =========================
-   Titoli
-========================= */
+/* Titoli */
 h1 {
   margin-bottom: 30px;
   font-family: 'Merriweather', serif;
@@ -45,9 +39,7 @@ h5 {
   color: #444444;
 }
 
-/* =========================
-   Immagini card - dimensione uniforme
-========================= */
+/* Immagini card - dimensione uniforme */
 .card-img-top {
   height: 200px;          /* Altezza fissa per tutte le immagini */
   width: 100%;             /* Larghezza piena della card */
@@ -56,9 +48,7 @@ h5 {
   border-top-right-radius: 12px;
 }
 
-/* =========================
-   Testo paragrafi
-========================= */
+/* Testo paragrafi */
 p {
   margin-bottom: 30px;
   font-family: 'Roboto', sans-serif;
@@ -67,17 +57,13 @@ p {
   color: #555555;
 }
 
-/* =========================
-   Tema chiaro (default)
-========================= */
+/* Tema chiaro */
 body {
   background-color: #ffffff;
   color: #333333;
 }
 
-/* =========================
-   Card - tema chiaro
-========================= */
+/* Card - tema chiaro */
 .card {
   background-color: #ffffff;
   color: #333333;
