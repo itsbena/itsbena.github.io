@@ -61,3 +61,28 @@ function disableDarkMode(body, icon) {
     if (navbar) navbar.classList.remove("dark-mode");
   }, 10);
 }
+
+// =========================
+// Cookie Popup
+// =========================
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('cookie-popup');
+    const acceptBtn = document.getElementById('accept-cookie');
+    const declineBtn = document.getElementById('decline-cookie');
+
+    // Se l'utente ha già accettato, non mostrare il popup
+    if (localStorage.getItem('cookieAccepted') === 'true') {
+        popup.style.display = 'none';
+    }
+
+    // Accetta cookie: nasconde il popup e salva la scelta
+    acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieAccepted', 'true');
+        popup.style.display = 'none';
+    });
+
+    // Rifiuta cookie: porta a google e non salva nulla
+    declineBtn.addEventListener('click', function() {
+        window.location.href = 'https://www.google.com';
+    });
+});
