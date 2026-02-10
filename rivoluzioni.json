@@ -1,0 +1,45 @@
+{
+  "rivoluzioni": [
+    {
+      "id": "francese",
+      "nome": "Rivoluzione Francese",
+      "descrizione": "Caduta dell’Ancien Régime e nascita dei principi di libertà e uguaglianza.",
+      "fasi": [
+        {
+          "titolo": "Stati Generali",
+          "periodo": "1789",
+          "descrizione": "Convocazione per risolvere la crisi finanziaria."
+        },
+        {
+          "titolo": "Presa della Bastiglia",
+          "periodo": "14 luglio 1789",
+          "descrizione": "Evento simbolico dell’inizio della rivoluzione."
+        }
+      ]
+    },
+    {
+      "id": "industriale",
+      "nome": "Rivoluzione Industriale",
+      "descrizione": "Trasformazione economica e sociale dovuta alle macchine.",
+      "fasi": [
+        {
+          "titolo": "Meccanizzazione",
+          "periodo": "XVIII secolo",
+          "descrizione": "Introduzione delle macchine nel lavoro."
+        }
+      ]
+    },
+    {
+      "id": "americana",
+      "nome": "Rivoluzione Americana",
+      "descrizione": "Processo di indipendenza delle colonie americane.",
+      "fasi": [
+        {
+          "titolo": "Dichiarazione di indipendenza",
+          "periodo": "1776",
+          "descrizione": "Nascita degli Stati Uniti."
+        }
+      ]
+    }
+  ]
+}
