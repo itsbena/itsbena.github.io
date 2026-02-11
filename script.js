@@ -28,7 +28,7 @@ document.addEventListener("click", (e) => {
 });
 
 // Carica JSON
-fetch("rivoluzioni.json")
+fetch("assets/rivoluzioni.json")
   .then(res => res.json())
   .then(data => {
     data.rivoluzioni.forEach(riv => {
