@@ -43,8 +43,9 @@ fetch("rivoluzioni.json")
       const card = document.createElement("div");
       card.className = "home-card";
       card.innerHTML = `
-        <h3>${riv.nome}</h3>
-        <p>${riv.descrizione}</p>
+       <img src="${riv.immagine}" alt="${riv.nome}">
+       <h3>${riv.nome}</h3>
+       <p>${riv.descrizione}</p>
       `;
       card.onclick = () => showRivoluzione(riv);
       homeCards.appendChild(card);

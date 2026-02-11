@@ -4,6 +4,7 @@
       "id": "francese",
       "nome": "Rivoluzione Francese",
       "descrizione": "Caduta dell’Ancien Régime e nascita dei principi di libertà e uguaglianza.",
+      "immagine": "img/riv_francese.jpg",
       "fasi": [
         {
           "titolo": "Stati Generali",
@@ -21,6 +22,7 @@
       "id": "industriale",
       "nome": "Rivoluzione Industriale",
       "descrizione": "Trasformazione economica e sociale dovuta alle macchine.",
+      "immagine": "img/riv_industriale.jpg",
       "fasi": [
         {
           "titolo": "Meccanizzazione",
@@ -33,6 +35,7 @@
       "id": "americana",
       "nome": "Rivoluzione Americana",
       "descrizione": "Processo di indipendenza delle colonie americane.",
+      "immagine": "img/riv_americana.jpg",
       "fasi": [
         {
           "titolo": "Dichiarazione di indipendenza",
