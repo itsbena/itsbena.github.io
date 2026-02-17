@@ -1,76 +1,60 @@
-const menuBtn = document.getElementById("menuBtn");
-const sideMenu = document.getElementById("sideMenu");
-const menuList = document.getElementById("menuList");
-const homeCards = document.getElementById("homeCards");
-const content = document.getElementById("content");
-const hero = document.querySelector(".hero");
-
-let menuOpen = false;
-
-// Toggle menu
-menuBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  toggleMenu();
-});
-
-function toggleMenu() {
-  sideMenu.style.right = menuOpen ? "-260px" : "0";
-  menuOpen = !menuOpen;
-  menuBtn.classList.toggle("open");
+// Funzione per creare una card HTML
+function creaCard(rivoluzione) {
+    return `
+    <div class="col">
+        <a href="#" class="text-decoration-none" 
+           data-titolo="${rivoluzione.titolo}" 
+           data-contenuto='${rivoluzione.contenuto}'>
+            <div class="card h-100 bg-dark text-light">
+                <img src="${rivoluzione.foto}" class="card-img-top card-img-uniform" alt="${rivoluzione.titolo}">
+                <div class="card-body">
+                    <h5 class="card-title text-center">${rivoluzione.titolo}</h5>
+                    <p class="description">${rivoluzione.descrizione}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    `;
 }
 
-// Click fuori → chiude menu
-document.addEventListener("click", (e) => {
-  if (menuOpen && !sideMenu.contains(e.target) && e.target !== menuBtn) {
-    sideMenu.style.right = "-260px";
-    menuOpen = false;
-  }
-});
+// Carica il JSON e genera le card
+fetch('assets/rivoluzioni.json')
+    .then(response => response.json())
+    .then(data => {
+        const container = document.getElementById('cards-container');
+        data.forEach(rivoluzione => {
+            container.innerHTML += creaCard(rivoluzione);
+        });
 
-// Carica JSON
-fetch("assets/rivoluzioni.json")
-  .then(res => res.json())
-  .then(data => {
-    data.rivoluzioni.forEach(riv => {
+        // Aggiunge evento click alle card
+        const links = container.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const contenuto = this.getAttribute('data-contenuto');
+                const titolo = this.getAttribute('data-titolo'); // Prende il titolo
+                mostraContenuto(titolo, contenuto);
+            });
+        });
+    })
+    .catch(err => console.error(err));
 
-      // Menu laterale
-      const li = document.createElement("li");
-      li.textContent = riv.nome;
-      li.onclick = () => showRivoluzione(riv);
-      menuList.appendChild(li);
+// Funzione che mostra il contenuto completo della rivoluzione nel modal
+function mostraContenuto(titolo, contenuto) {
+    const modalBody = document.getElementById('modal-body');
+    modalBody.innerHTML = contenuto;
 
-      // Card home
-      const card = document.createElement("div");
-      card.className = "home-card";
-      card.innerHTML = `
-       <img src="${riv.immagine}" alt="${riv.nome}">
-       <h3>${riv.nome}</h3>
-       <p>${riv.descrizione}</p>
-      `;
-      card.onclick = () => showRivoluzione(riv);
-      homeCards.appendChild(card);
-    });
+    const modalTitle = document.querySelector('#contenutoModal .modal-title');
+    modalTitle.textContent = titolo; // Imposta il titolo dinamicamente
+
+    const myModal = new bootstrap.Modal(document.getElementById('contenutoModal'));
+    myModal.show();
+}
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(reg => console.log('Service Worker registrato', reg))
+      .catch(err => console.log('Service Worker non registrato', err));
   });
-
-function showRivoluzione(riv) {
-  hero.style.display = "none";
-  homeCards.style.display = "none";
-  content.classList.remove("hidden");
-
-  content.innerHTML = `
-    <h2>${riv.nome}</h2>
-    <p>${riv.descrizione}</p>
-    <div class="cards">
-      ${riv.fasi.map(fase => `
-        <div class="card">
-          <h3>${fase.titolo}</h3>
-          <p><strong>${fase.periodo}</strong></p>
-          <p>${fase.descrizione}</p>
-        </div>
-      `).join("")}
-    </div>
-  `;
-
-  sideMenu.style.right = "-260px";
-  menuOpen = false;
 }

@@ -1,48 +1,25 @@
-{
-  "rivoluzioni": [
-    {
-      "id": "francese",
-      "nome": "Rivoluzione Francese",
-      "descrizione": "Caduta dell’Ancien Régime e nascita dei principi di libertà e uguaglianza.",
-      "immagine": "img/riv_francese.jpg",
-      "fasi": [
-        {
-          "titolo": "Stati Generali",
-          "periodo": "1789",
-          "descrizione": "Convocazione per risolvere la crisi finanziaria."
-        },
-        {
-          "titolo": "Presa della Bastiglia",
-          "periodo": "14 luglio 1789",
-          "descrizione": "Evento simbolico dell’inizio della rivoluzione."
-        }
-      ]
-    },
-    {
-      "id": "industriale",
-      "nome": "Rivoluzione Industriale",
-      "descrizione": "Trasformazione economica e sociale dovuta alle macchine.",
-      "immagine": "img/riv_industriale.jpg",
-      "fasi": [
-        {
-          "titolo": "Meccanizzazione",
-          "periodo": "XVIII secolo",
-          "descrizione": "Introduzione delle macchine nel lavoro."
-        }
-      ]
-    },
-    {
-      "id": "americana",
-      "nome": "Rivoluzione Americana",
-      "descrizione": "Processo di indipendenza delle colonie americane.",
-      "immagine": "img/riv_americana.jpg",
-      "fasi": [
-        {
-          "titolo": "Dichiarazione di indipendenza",
-          "periodo": "1776",
-          "descrizione": "Nascita degli Stati Uniti."
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "titolo": "Rivoluzione Americana",
+    "descrizione": "La Rivoluzione Americana fu un conflitto armato tra gli Stati Uniti d'America e il Regno Unito, che durò dal 1775 al 1783.",
+    "foto": "assets/img/RivoluzioneAmericana.jpg",
+    "contenuto":
+      "bau"
+  },
+
+  {
+    "titolo": "Rivoluzione Francese",
+    "descrizione": "La Rivoluzione Francese fu un periodo di grandi trasformazioni politiche, sociali e culturali in Francia tra il 1789 e il 1799.",
+    "foto": "assets/img/RivoluzioneFrancese.jpg",
+    "contenuto":
+      "bau"
+  },
+
+  {
+    "titolo": "Rivoluzione Industriale",
+    "descrizione": "La Rivoluzione Industriale fu un periodo di grandi trasformazioni economiche e sociali che iniziò nel XVIII secolo in Gran Bretagna.",
+    "foto": "assets/img/RivoluzioneIndustriale.jpg",
+    "contenuto":
+      "miao"
+  }
+]

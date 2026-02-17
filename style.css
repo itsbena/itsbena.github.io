@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth; /* lo stile di scorrimento */
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  background-image: url('assets/img/home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* scurisce lo sfondo */
+  backdrop-filter: blur(6px);     /* sfoca lo sfondo */
+  z-index: -1;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Titoli */
+.title {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 20px 0;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.subtitle-nocaps {
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.description {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUpAnim 0.8s forwards;
+}
+
+@keyframes fadeUpAnim {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delay per ogni elemento */
+.subtitle.fade-up { animation-delay: 0.2s; }
+.title.fade-up { animation-delay: 0.4s; }
+.description.fade-up { animation-delay: 0.6s; }
+.btn.fade-up { animation-delay: 0.8s; }
+
+/* Pulsante */
+.hero .btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: rgba(255,255,255,0.85);
+  color: #000;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 20px 0;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.card-img-uniform { /* per rendere tutte le immagini uniformi e centrali */
+    height: 250px; 
+    object-fit: cover;
+}
+
+/* MENU LATERALE */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background: #1a1a1a;
+  padding: 40px 20px;
+  transition: right 0.3s ease;
+  z-index: 10;
+}
+
+.side-menu ul {
+  list-style: none;
+  margin-top: 60px;
+}
+
+.side-menu li {
+  margin-bottom: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.side-menu li:hover {
+  opacity: 1;
+}
