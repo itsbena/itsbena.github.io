@@ -1,15 +1,14 @@
 // Funzione per creare una card HTML
-function creaCard(rivoluzione) {
+function creaCard(rivoluzione, index) {
     return `
     <div class="col">
-        <a href="#" class="text-decoration-none" 
-           data-titolo="${rivoluzione.titolo}" 
-           data-contenuto='${rivoluzione.contenuto}'>
+        <a href="#" class="text-decoration-none" data-index="${index}">
             <div class="card h-100 bg-dark text-light">
                 <img src="${rivoluzione.foto}" class="card-img-top card-img-uniform" alt="${rivoluzione.titolo}">
                 <div class="card-body">
                     <h5 class="card-title text-center">${rivoluzione.titolo}</h5>
                     <p class="description">${rivoluzione.descrizione}</p>
+                    <p class="subtitle-nocaps">${rivoluzione.periodo}</p>
                 </div>
             </div>
         </a>
@@ -22,8 +21,12 @@ fetch('assets/rivoluzioni.json')
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById('cards-container');
-        data.forEach(rivoluzione => {
-            container.innerHTML += creaCard(rivoluzione);
+
+        // Salviamo il JSON in memoria per accedere facilmente al contenuto
+        window.rivoluzioni = data;
+
+        data.forEach((rivoluzione, index) => {
+            container.innerHTML += creaCard(rivoluzione, index);
         });
 
         // Aggiunge evento click alle card
@@ -31,21 +34,23 @@ fetch('assets/rivoluzioni.json')
         links.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
-                const contenuto = this.getAttribute('data-contenuto');
-                const titolo = this.getAttribute('data-titolo'); // Prende il titolo
-                mostraContenuto(titolo, contenuto);
+                const index = this.getAttribute('data-index');
+                const riv = window.rivoluzioni[index];
+                mostraContenuto(riv.titolo, riv.contenuto);
             });
         });
     })
     .catch(err => console.error(err));
 
 // Funzione che mostra il contenuto completo della rivoluzione nel modal
-function mostraContenuto(titolo, contenuto) {
+function mostraContenuto(titolo, contenutoArray) {
     const modalBody = document.getElementById('modal-body');
-    modalBody.innerHTML = contenuto;
+
+    // Trasforma l'array di paragrafi in <p> HTML
+    modalBody.innerHTML = contenutoArray.map(paragrafo => `${paragrafo}`).join('');
 
     const modalTitle = document.querySelector('#contenutoModal .modal-title');
-    modalTitle.textContent = titolo; // Imposta il titolo dinamicamente
+    modalTitle.textContent = titolo;
 
     const myModal = new bootstrap.Modal(document.getElementById('contenutoModal'));
     myModal.show();

@@ -6,74 +6,75 @@
 }
 
 html {
-  scroll-behavior: smooth; /* lo stile di scorrimento */
+  scroll-behavior: smooth; /* lo stile di scorrimento della pagina */
 }
 
 body {
-  background: #0f0f0f;
-  color: #fff;
-  background-image: url('assets/img/home.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: #0f0f0f; /* colore di sfondo scuro di base */
+  color: #fff; /* colore testo bianco */
+  background-image: url('assets/img/home.jpg'); /* immagine di sfondo */
+  background-size: cover; /* copre tutto lo schermo */
+  background-position: center; /* centra l'immagine */
+  background-attachment: fixed; /* immagine fissa durante lo scorrimento */
   position: relative;
-  min-height: 100vh;
 }
 
 body::before {
   content: "";
   position: fixed;
-  top: 0;
+  top: 0; 
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; /* top, left, width e height impostati così per scurire tutto lo sfondo */
   background: rgba(0, 0, 0, 0.55); /* scurisce lo sfondo */
   backdrop-filter: blur(6px);     /* sfoca lo sfondo */
-  z-index: -1;
+  z-index: -1; /* rimane dietro a tutti gli elementi */
 }
 
+/* Assicura che tutti gli elementi siano sopra l'immagine sfocata */
 body > * {
   position: relative;
   z-index: 1;
 }
 
-/* HERO */
+/* HERO: sezione introduttiva a schermo intero */
 .hero {
-  height: 100vh;
+  height: 100vh; /* altezza pari alla finestra */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* centra verticalmente */
+  justify-content: center; /* centra orizzontalmente */
   text-align: center;
 }
 
-/* Titoli */
+/* TITOLI PRINCIPALI */
 .title {
-  font-size: 60px;
+  font-size: 60px; /* dimensione font */
   font-weight: 800;
   margin: 20px 0;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* ombra testo per leggibilità */
 }
 
 .subtitle {
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-size: 14px; /* dimensione font */
+  letter-spacing: 2px; /* spaziatura tra le lettere */
   opacity: 0.8;
-  text-transform: uppercase;
+  text-transform: uppercase; /* lo imposta in stampatello */
   text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
 }
 
 .subtitle-nocaps {
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-size: 14px; /* dimensione font */
+  letter-spacing: 2px; /* spaziatura tra le lettere */
   opacity: 0.8;
   text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
 }
 
 .description {
-  font-size: 16px;
+  font-size: 16px; /* dimensione font */
   opacity: 0.9;
 }
 
+/* animazione per far comparire le scritte dal basso verso l'alto quando si carica la pagina */
 .fade-up {
     opacity: 0;
     transform: translateY(20px);
@@ -83,27 +84,27 @@ body > * {
 @keyframes fadeUpAnim {
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0); /* arriva nella posizione normale */
     }
 }
 
-/* Delay per ogni elemento */
+/* Ritardo animazioni per far comparire le scritte in modo sequenziale, una dopo l'altra */
 .subtitle.fade-up { animation-delay: 0.2s; }
 .title.fade-up { animation-delay: 0.4s; }
 .description.fade-up { animation-delay: 0.6s; }
 .btn.fade-up { animation-delay: 0.8s; }
 
-/* Pulsante */
+/* BOTTONE HERO */
 .hero .btn {
   margin-top: 20px;
   padding: 12px 30px;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.2); /* leggermente trasparente */
   color: #fff;
   border: 2px solid #fff;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* transizione fluida */
 }
 
 .hero .btn:hover {
@@ -111,6 +112,7 @@ body > * {
   color: #000;
 }
 
+/* TITOLI CARTE */
 .card-title {
   font-size: 28px;
   font-weight: 800;
@@ -118,35 +120,67 @@ body > * {
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
-.card-img-uniform { /* per rendere tutte le immagini uniformi e centrali */
-    height: 250px; 
-    object-fit: cover;
+/* IMMAGINI CARTE UNIFORMI */
+.card-img-uniform {
+    height: 250px; /* altezza fissa */
+    object-fit: cover; /* ritaglio centrato e proporzionato */
 }
 
-/* MENU LATERALE */
-.side-menu {
-  position: fixed;
-  top: 0;
-  right: -260px;
-  width: 260px;
-  height: 100%;
-  background: #1a1a1a;
-  padding: 40px 20px;
-  transition: right 0.3s ease;
-  z-index: 10;
+/* MODAL CUSTOM */
+.custom-modal {
+  background: #141414; /* fondo pieno */
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.8);
+  overflow: hidden;
 }
 
-.side-menu ul {
-  list-style: none;
-  margin-top: 60px;
+.modal-header {
+  padding: 40px 50px 20px 50px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.04), transparent);
 }
 
-.side-menu li {
-  margin-bottom: 30px;
-  cursor: pointer;
-  opacity: 0.8;
+.modal-title {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #ffffff;
 }
 
-.side-menu li:hover {
-  opacity: 1;
+.modal-subtitle {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.custom-modal-body {
+  padding: 30px 50px 50px 50px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.85);
+  max-height: 70vh;
+  overflow-y: auto; /* scroll verticale se necessario */
+}
+
+.custom-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-modal-body::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+}
+
+.modal-footer {
+  padding: 0 50px 40px 50px;
+}
+
+.modal.fade .modal-dialog {
+  transform: scale(0.9) translateY(20px); /* parte leggermente ridotto e spostato */
+  transition: all 0.3s ease; /* transizione fluida */
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1) translateY(0); /* ritorna a dimensione normale */
 }
