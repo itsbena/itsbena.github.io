@@ -4,7 +4,7 @@
     "descrizione": "La Rivoluzione Americana fu un conflitto armato tra gli Stati Uniti d'America e il Regno Unito, che durò dal 1775 al 1783.",
     "foto": "assets/img/RivoluzioneAmericana.jpg",
     "contenuto":
-      "bau"
+      ""
   },
 
   {
@@ -20,6 +20,6 @@
     "descrizione": "La Rivoluzione Industriale fu un periodo di grandi trasformazioni economiche e sociali che iniziò nel XVIII secolo in Gran Bretagna.",
     "foto": "assets/img/RivoluzioneIndustriale.jpg",
     "contenuto":
-      "miao"
+      "<h2>Rivoluzione Industriale</h2> <p>La Rivoluzione industriale è un insieme di trasformazioni economiche, sociali e culturali che iniziano in Gran Bretagna alla fine del XVIII secolo, cambiando profondamente la società, il lavoro e l’organizzazione produttiva.</p> <p>Scoppia in Inghilterra grazie alla <strong>stabilità politica</strong>, al predominio nel commercio mondiale, a una <strong>borghesia dinamica</strong>, all’interesse per la tecnologia e al senso pratico degli imprenditori.</p> <p>Un ruolo decisivo è svolto dalla <strong>rivoluzione agricola</strong>: accorpamento delle terre, <strong>Rotazione di Norfolk</strong>, aumento della produttività, enclosures e diffusione di nuovi prodotti americani. Le conseguenze sono <strong>crescita demografica</strong>, sviluppo del mercato interno e delle vie di comunicazione.</p> <p>L’Inghilterra dispone di grandi quantità di <strong>carbone e ferro</strong>. Prima si diffonde l’industria a domicilio nel settore tessile; poi nascono <strong>fabbriche</strong>, con divisione del lavoro e produzione organizzata dall’imprenditore.</p> <p>Nel tessile si sviluppa l’industria del cotone, basata sull’importazione di cotone grezzo dalle colonie americane. Numerose innovazioni accelerano la produzione: <strong>spoletta automatica</strong>, <strong>spinning jenny</strong>, <strong>filatrice idraulica</strong>, <strong>mule</strong>, <strong>telaio meccanico</strong>.</p> <p>Nella siderurgia si passa dal carbone di legna al <strong>carbon coke</strong>. <strong>James Watt perfeziona la macchina a vapore</strong>, simbolo della rivoluzione industriale, applicata a fabbriche, ferrovie e navigazione.</p> <p>Le conseguenze sono <strong>urbanesimo</strong>, nascita del <strong>sistema capitalistico</strong>, <strong>sfruttamento del lavoro</strong>, orari fino a 12-16 ore e assenza di tutele.</p> <p>Nascono proteste operaie come il <strong>luddismo</strong>, represse con durezza.</p>"
   }
 ]
