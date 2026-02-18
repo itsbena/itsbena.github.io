@@ -6,19 +6,37 @@
     <title>Le grandi rivoluzioni</title> <!-- Titolo della pagina -->
 
     <!-- CSS di Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Font Awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- CSS personalizzato -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Manifest per PWA -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="assets/PWA/manifest.json">
     <meta name="theme-color" content="#0f0f0f">
 
     <!-- Icona del sito -->
     <link rel="icon" href="assets/img/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+    <!-- RICERCA -->
+    <div id="searchBar" class="fixed-top pt-3 px-4 d-flex justify-content-end" style="z-index:1060;">
+        <!-- l'icona di ricerca senza sfondo e bordo -->
+        <button id="searchBtn" class="btn p-2 shadow-none" style="background:transparent;">
+            <i class="fas fa-search text-white fs-4" style="text-shadow:0 2px 8px rgba(0,0,0,0.9);"></i>
+        </button>
+
+        <!-- Campo di testo con sfondo nero, scritte bianche e ombra intorno -->
+        <input id="searchInput" type="text" class="form-control form-control-sm shadow mt-1 ms-3 px-4"
+               placeholder="Cerca..." style="display:none; width:0; opacity:0; max-width:260px; 
+               background:rgba(0,0,0,0.85); border:none; color:#fff; font-size:0.9rem; 
+               box-shadow:0 4px 20px rgba(0,0,0,0.5);">
+    </div>
 
     <!-- HERO: sezione introduttiva in cima alla pagina -->
     <section class="hero">
@@ -48,7 +66,7 @@
     <!-- FOOTER: piede pagina -->
     <footer class="bg-dark text-center p-4 border-top border-secondary">
         <div class="container p-4">
-            <p>© 2026 Le grandi rivoluzioni</p> 
+            <p>© 2026 Le grandi rivoluzioni</p>
             <p class="subtitle-nocaps">
                 Made by Benatelli Marco, De Lorenzis Leonardo e Panciatici Samuele
             </p>
@@ -56,11 +74,11 @@
         </div>
     </footer>
 
-    <!-- MODAL: finestra popup in cui viene mostrato il contenuto della rivoluzione dal JSON-->
+    <!-- MODAL: finestra popup in cui viene mostrato il contenuto della rivoluzione dal JSON -->
     <div class="modal fade" id="contenutoModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content custom-modal">
-                
+
                 <div class="modal-header border-0">
                     <div>
                         <h2 class="modal-title mb-0"></h2> <!-- Titolo del modal, popolato dinamicamente in base al JSON -->

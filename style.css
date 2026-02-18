@@ -17,6 +17,7 @@ body {
   background-position: center; /* centra l'immagine */
   background-attachment: fixed; /* immagine fissa durante lo scorrimento */
   position: relative;
+  padding-top: 55px; /* navbar */
 }
 
 body::before {
@@ -44,6 +45,7 @@ body > * {
   align-items: center; /* centra verticalmente */
   justify-content: center; /* centra orizzontalmente */
   text-align: center;
+  padding-top: 10px !important; /* !important per avere priorità sulle altre regole di stile */
 }
 
 /* TITOLI PRINCIPALI */
@@ -51,6 +53,7 @@ body > * {
   font-size: 60px; /* dimensione font */
   font-weight: 800;
   margin: 20px 0;
+  margin-top: 0 !important;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* ombra testo per leggibilità */
 }
 
@@ -183,4 +186,23 @@ body > * {
 
 .modal.show .modal-dialog {
   transform: scale(1) translateY(0); /* ritorna a dimensione normale */
+}
+
+/* RICERCA */
+#searchBtn:hover i {
+  color: #fff !important;
+  text-shadow: 0 2px 12px rgba(255,255,255,0.5);
+  transform: scale(1.2);
+}
+
+#searchInput::placeholder {
+  color: rgba(255,255,255,0.85) !important;
+  font-weight: 500; /* dimensione font */
+}
+
+#searchInput:focus {
+  width: 260px !important; /* largheza */
+  opacity: 1 !important; /* opacità */
+  box-shadow: 0 5px 25px rgba(255,255,255,0.2) !important; /* ombra al campo di ricerca */
+  border: none !important; /* per togliere il bordo */
 }

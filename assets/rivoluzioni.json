@@ -43,5 +43,47 @@
       "<p>Le città crebbero rapidamente (<strong>urbanesimo</strong>) e si sviluppò il <strong>sistema capitalistico</strong>, spesso con sfruttamento del lavoro e orari fino a 12-16 ore, senza tutele. Le proteste operaie come il <strong>luddismo</strong> furono duramente represse.</p>",
       "<img src='assets/img/contents/OperaiIndustriali.jpg' alt='Operai nell’industria' style='width:100%; max-width:400px;'>"
     ]
-  }
+  },
+  {
+  "titolo": "Rivoluzione Inglese",
+  "descrizione": "La Glorious Revolution del 1688-1689 segnò il passaggio definitivo dall’assolutismo alla monarchia parlamentare in Inghilterra.",
+  "foto": "assets/img/RivoluzioneInglese.jpg",
+  "periodo": "1688-1689",
+  "contenuto": [
+    "<p>Alla morte di <strong>Carlo II</strong>, il partito dei <strong>Tories</strong>, nonostante il <strong>Test Act</strong>, favorì l’ascesa al trono di <strong>Giacomo II</strong>, che attuò una politica <strong>assolutistica</strong> e favorevole ai cattolici, suscitando forti opposizioni.</p>",
+    "<p>Per evitare una nuova guerra civile, il <strong>Parlamento</strong> offrì la corona a <strong>Guglielmo d’Orange</strong>, principe delle Province Unite e imparentato con la famiglia reale inglese. Nel <strong>1688</strong> egli sbarcò in Inghilterra e prese il potere senza spargimento di sangue: per questo l’evento fu chiamato <strong>Glorious Revolution</strong>.</p>",
+    "<img src='assets/img/contents/Combattimento.jpg' alt='Battaglia' style='width:100%; max-width:400px;'>",
+    "<p>Nel <strong>1689</strong> Guglielmo III d’Orange divenne re d’Inghilterra e accettò le nuove condizioni imposte dal Parlamento, segnando la nascita della <strong>monarchia parlamentare</strong>.</p>",
+    "<p>Con il <strong>Bill of Rights (1689)</strong> fu sancita la separazione dei poteri e la supremazia del Parlamento sul sovrano. Con l’<strong>Act of Settlement (1701)</strong> furono esclusi i discendenti di Giacomo II dalla successione e venne imposto il rispetto dell’anglicanesimo a ogni futuro sovrano.</p>",
+    "<p>Tra le altre conseguenze vi furono il riconoscimento della <strong>libertà di stampa</strong>, il divieto per il re di sciogliere arbitrariamente la Camera dei Comuni e la fondazione della <strong>Banca d’Inghilterra (1694)</strong>, elemento centrale per lo sviluppo economico britannico.</p>"
+  ]
+},
+{
+  "titolo": "Rivoluzione Scientifica",
+  "descrizione": "La Rivoluzione Scientifica tra XVI e XVII secolo trasformò il modo di conoscere il mondo, introducendo il metodo scientifico e una nuova visione dell’universo.",
+  "foto": "assets/img/RivoluzioneScientifica.jpg",
+  "periodo": "dal XVI al XVII secolo",
+  "contenuto": [
+    "<p>Tra il Cinquecento e il Seicento si sviluppò una profonda trasformazione del sapere conosciuta come <strong>Rivoluzione Scientifica</strong>. Si passò da una conoscenza basata sull’autorità degli antichi e sulla tradizione a un sapere fondato su <strong>osservazione, esperimento e ragionamento matematico</strong>.</p>",
+    "<p>Un momento decisivo fu la teoria <strong>eliocentrica</strong> di <strong>Niccolò Copernico</strong>, che nel 1543 sostenne che fosse il Sole, e non la Terra, al centro dell’universo. Questa teoria fu confermata e sviluppata da <strong>Galileo Galilei</strong>, grazie all’uso del telescopio e all’applicazione del metodo sperimentale.</p>",
+    "<img src='assets/img/contents/Scenziati.jpg' alt='Scenziati' style='width:100%; max-width:400px;'>",
+    "<p>Galileo affermò che la natura è regolata da <strong>leggi matematiche</strong> e che la conoscenza deve basarsi su <strong>esperimento e verifica</strong>. Le sue idee entrarono in conflitto con la Chiesa, che nel 1633 lo processò e lo costrinse all’abiura.</p>",
+    "<p>Importanti contributi furono dati anche da <strong>Keplero</strong>, che formulò le leggi sul moto dei pianeti, e da <strong>Isaac Newton</strong>, che nel 1687 enunciò la legge di <strong>gravitazione universale</strong>, unificando i fenomeni terrestri e celesti in un’unica spiegazione scientifica.</p>",
+    "<p>La Rivoluzione Scientifica portò alla nascita del <strong>metodo scientifico</strong> moderno e pose le basi per l’Illuminismo e per lo sviluppo della scienza e della tecnologia nei secoli successivi.</p>"
+  ]
+},
+{
+  "titolo": "Rivoluzione Agricola",
+  "descrizione": "La Rivoluzione Agricola tra XVII e XVIII secolo trasformò le tecniche di coltivazione e aumentò la produttività, favorendo crescita demografica e sviluppo economico.",
+  "foto": "assets/img/RivoluzioneAgricola.jpg",
+  "periodo": "dal XVII al XVIII secolo",
+  "contenuto": [
+    "<p>Tra il Seicento e il Settecento, soprattutto in Inghilterra, si sviluppò la <strong>Rivoluzione Agricola</strong>, un insieme di innovazioni che modificarono profondamente l’organizzazione delle campagne e aumentarono la produzione di cibo.</p>",
+    "<p>Un elemento centrale fu il sistema delle <strong>enclosures</strong>, cioè la recinzione e l’accorpamento delle terre comuni, che rese l’agricoltura più efficiente ma costrinse molti contadini a lasciare le campagne.</p>",
+    "<img src='assets/img/contents/Contadini.jpg' alt='Contadini che lavorano' style='width:100%; max-width:400px;'>",
+    "<p>Si diffuse la <strong>Rotazione di Norfolk</strong>, che eliminava il maggese alternando cereali, legumi e foraggi, migliorando la fertilità del suolo. Furono introdotti nuovi strumenti agricoli e nuove tecniche di allevamento selettivo del bestiame.</p>",
+    "<p>L’aumento della produttività agricola provocò una <strong>crescita demografica</strong> e liberò manodopera che si trasferì nelle città, contribuendo allo sviluppo della <strong>Rivoluzione Industriale</strong>.</p>",
+    "<p>La Rivoluzione Agricola rappresentò quindi una trasformazione economica fondamentale, che pose le basi per i grandi cambiamenti sociali ed economici dell’età moderna.</p>"
+  ]
+}
 ]
