@@ -1,0 +1,89 @@
+[
+  {
+    "titolo": "Rivoluzione Americana",
+    "descrizione": "La Rivoluzione Americana segnò la nascita degli Stati Uniti d’America e la fine del dominio britannico sulle colonie.",
+    "foto": "assets/img/RivoluzioneAmericana.jpg",
+    "periodo": "dal 1775 al 1783",
+    "contenuto": [
+      "<p>La Rivoluzione americana fu la <strong>guerra di indipendenza</strong> che tra il 1775 e il 1783 oppose le tredici colonie del Nord America alla Gran Bretagna. Queste colonie, nate tra il XVII e XVIII secolo, godevano di una certa autonomia attraverso le <strong>assemblee elettive</strong>, ma dipendevano economicamente dalla madrepatria a causa degli <strong>Atti di navigazione</strong>, che limitavano i commerci esclusivamente con l’Inghilterra.</p>",
+      "<p>Dopo la guerra dei Sette anni, l’Inghilterra aumentò le tasse per risanare il debito pubblico, introducendo provvedimenti come il <strong>Sugar Act (1764)</strong> e lo <strong>Stamp Act (1765)</strong>. I coloni reagirono con il principio <strong>“No taxation without representation”</strong>, affermando il diritto a non essere tassati senza rappresentanza politica.</p>",
+      "<p>La tensione culminò nel <strong>Boston Tea Party (1773)</strong>, quando i coloni gettarono in mare il carico di tè inglese come protesta contro le tasse. La repressione britannica rafforzò l’unità delle colonie e nel 1775 scoppiò la guerra, guidata da un esercito sotto <strong>George Washington</strong>.</p>",
+      "<img src='assets/img/contents/BostonTeaParty.jpg' alt='Boston Tea Party' style='width:100%; max-width:400px;'>",
+      "<p>Il <strong>4 luglio 1776</strong> venne approvata la <strong>Dichiarazione d’Indipendenza</strong>, ispirata ai principi dell’<em>Illuminismo</em>, che affermava i diritti naturali dell’uomo: libertà e uguaglianza. Dopo importanti vittorie, come <strong>Saratoga (1777)</strong>, Francia, Spagna e Olanda si schierarono a favore dei coloni.</p>",
+      "<p>La guerra si concluse con la resa inglese a <strong>Yorktown (1781)</strong> e il <strong>Trattato di Versailles (1783)</strong>, che riconobbe l’indipendenza delle colonie. Nacquero così gli <strong>Stati Uniti d’America</strong>, organizzati secondo la <em>divisione dei poteri</em> tra Presidente, Congresso e Corte Suprema.</p>"
+    ]
+    
+  },
+  {
+    "titolo": "Rivoluzione Francese",
+    "descrizione": "La Rivoluzione Francese trasformò profondamente la Francia tra il 1789 e il 1799, cambiando politica, società e cultura.",
+    "foto": "assets/img/RivoluzioneFrancese.jpg",
+    "periodo": "dal 1789 al 1799",
+    "contenuto": [
+      "<p>La Rivoluzione francese scaturì da una profonda <strong>crisi economica</strong>, dall’ingiustizia dei privilegi feudali e dalla diffusione delle <strong>idee illuministe</strong>, che sostenevano libertà, uguaglianza e sovranità popolare. Lo Stato era gravato dai debiti delle guerre e dalle spese della corte, mentre nobiltà e clero erano esentati dalle tasse e il Terzo Stato sopportava gran parte del peso fiscale.</p>",
+      "<p>Nel 1789 Luigi XVI convocò gli <strong>Stati Generali</strong>. Il Terzo Stato, rappresentante la maggioranza della popolazione, chiedeva il voto per testa e il <strong>20 giugno 1789</strong> compì il <strong>Giuramento della Pallacorda</strong>, dando vita all’<strong>Assemblea Nazionale Costituente</strong>. <img src='assets/img/GiuramentoPallacorda.jpg' alt='Giuramento della Pallacorda' style='width:100%; max-width:400px;'></p>",
+      "<p>Il <strong>14 luglio 1789</strong> il popolo di Parigi assaltò la <strong>Bastiglia</strong>, simbolo del potere assolutista. Poco dopo, il <strong>4 agosto 1789</strong> furono aboliti i privilegi feudali e il <strong>26 agosto 1789</strong> venne proclamata la <strong>Dichiarazione dei Diritti dell’Uomo e del Cittadino</strong>, affermando principi di <em>libertà</em>, <em>uguaglianza</em> e sovranità della nazione.</p>",
+      "<p>Nel 1791 si instaurò una <strong>monarchia costituzionale</strong>, ma il tentativo di fuga del re alimentò la sfiducia. Nel 1792 fu proclamata la <strong>Repubblica</strong> e il <strong>21 gennaio 1793</strong> Luigi XVI fu ghigliottinato.</p>", 
+      "<img src='assets/img/contents/Ghigliottina.jpg' alt='Ghigliottinamento di Luigi XVI' style='width:100%; max-width:400px;'>",
+      "<p>Durante la fase più radicale, il <strong>Comitato di Salute Pubblica</strong> guidato da <strong>Robespierre</strong> instaurò il <strong>Terrore (1793-1794)</strong>, caratterizzato da repressioni e condanne per i nemici della rivoluzione. Dopo la caduta di Robespierre nel 1794, nel 1795 fu istituito il <strong>Direttorio</strong>, periodo di instabilità politica che preparò la strada all’ascesa di <strong>Napoleone Bonaparte</strong>.</p>"
+    ]
+  },
+  {
+    "titolo": "Rivoluzione Industriale",
+    "descrizione": "La Rivoluzione Industriale trasformò l’economia, la società e il lavoro a partire dal XVIII secolo in Gran Bretagna.",
+    "foto": "assets/img/RivoluzioneIndustriale.jpg",
+    "periodo": "da fine XVIII secolo al XIX secolo",
+    "contenuto": [
+      "<p>La Rivoluzione Industriale rappresenta un insieme di trasformazioni economiche, sociali e culturali iniziate in Gran Bretagna alla fine del XVIII secolo, modificando profondamente società, lavoro e produzione.</p>",
+      "<p>Grazie alla <strong>stabilità politica</strong>, al predominio commerciale e a una <strong>borghesia intraprendente</strong>, l’Inghilterra divenne terreno fertile per innovazioni tecnologiche e industriali.</p>",
+      "<img src='assets/img/contents/FabbricaIndustriale.png' alt='Fabbrica industriale' style='width:100%; max-width:400px;'>",
+      "<p>La <strong>rivoluzione agricola</strong> favorì l’aumento della produttività: accorpamento delle terre, <strong>Rotazione di Norfolk</strong>, enclosures e introduzione di nuovi prodotti americani generarono crescita demografica e sviluppo del mercato interno.</p>",
+      "<p>La disponibilità di <strong>carbone e ferro</strong> permise la nascita di fabbriche tessili e metallurgiche. L’industria del cotone si sviluppò grazie a importazioni dalle colonie americane, mentre innovazioni come <strong>spoletta automatica</strong>, <strong>spinning jenny</strong>, <strong>filatrice idraulica</strong> e <strong>telaio meccanico</strong> aumentarono la produttività.</p>",
+      "<p>Nella siderurgia si passò dal carbone di legna al <strong>carbon coke</strong> e <strong>James Watt perfezionò la macchina a vapore</strong>, applicata a fabbriche, ferrovie e navigazione, simbolo della rivoluzione industriale.</p>",
+      "<p>Le città crebbero rapidamente (<strong>urbanesimo</strong>) e si sviluppò il <strong>sistema capitalistico</strong>, spesso con sfruttamento del lavoro e orari fino a 12-16 ore, senza tutele. Le proteste operaie come il <strong>luddismo</strong> furono duramente represse.</p>",
+      "<img src='assets/img/contents/OperaiIndustriali.jpg' alt='Operai nell’industria' style='width:100%; max-width:400px;'>"
+    ]
+  },
+  {
+  "titolo": "Rivoluzione Inglese",
+  "descrizione": "La Glorious Revolution del 1688-1689 segnò il passaggio definitivo dall’assolutismo alla monarchia parlamentare in Inghilterra.",
+  "foto": "assets/img/RivoluzioneInglese.jpg",
+  "periodo": "1688-1689",
+  "contenuto": [
+    "<p>Alla morte di <strong>Carlo II</strong>, il partito dei <strong>Tories</strong>, nonostante il <strong>Test Act</strong>, favorì l’ascesa al trono di <strong>Giacomo II</strong>, che attuò una politica <strong>assolutistica</strong> e favorevole ai cattolici, suscitando forti opposizioni.</p>",
+    "<p>Per evitare una nuova guerra civile, il <strong>Parlamento</strong> offrì la corona a <strong>Guglielmo d’Orange</strong>, principe delle Province Unite e imparentato con la famiglia reale inglese. Nel <strong>1688</strong> egli sbarcò in Inghilterra e prese il potere senza spargimento di sangue: per questo l’evento fu chiamato <strong>Glorious Revolution</strong>.</p>",
+    "<img src='assets/img/contents/Combattimento.jpg' alt='Battaglia' style='width:100%; max-width:400px;'>",
+    "<p>Nel <strong>1689</strong> Guglielmo III d’Orange divenne re d’Inghilterra e accettò le nuove condizioni imposte dal Parlamento, segnando la nascita della <strong>monarchia parlamentare</strong>.</p>",
+    "<p>Con il <strong>Bill of Rights (1689)</strong> fu sancita la separazione dei poteri e la supremazia del Parlamento sul sovrano. Con l’<strong>Act of Settlement (1701)</strong> furono esclusi i discendenti di Giacomo II dalla successione e venne imposto il rispetto dell’anglicanesimo a ogni futuro sovrano.</p>",
+    "<p>Tra le altre conseguenze vi furono il riconoscimento della <strong>libertà di stampa</strong>, il divieto per il re di sciogliere arbitrariamente la Camera dei Comuni e la fondazione della <strong>Banca d’Inghilterra (1694)</strong>, elemento centrale per lo sviluppo economico britannico.</p>"
+  ]
+},
+{
+  "titolo": "Rivoluzione Scientifica",
+  "descrizione": "La Rivoluzione Scientifica tra XVI e XVII secolo trasformò il modo di conoscere il mondo, introducendo il metodo scientifico e una nuova visione dell’universo.",
+  "foto": "assets/img/RivoluzioneScientifica.jpg",
+  "periodo": "dal XVI al XVII secolo",
+  "contenuto": [
+    "<p>Tra il Cinquecento e il Seicento si sviluppò una profonda trasformazione del sapere conosciuta come <strong>Rivoluzione Scientifica</strong>. Si passò da una conoscenza basata sull’autorità degli antichi e sulla tradizione a un sapere fondato su <strong>osservazione, esperimento e ragionamento matematico</strong>.</p>",
+    "<p>Un momento decisivo fu la teoria <strong>eliocentrica</strong> di <strong>Niccolò Copernico</strong>, che nel 1543 sostenne che fosse il Sole, e non la Terra, al centro dell’universo. Questa teoria fu confermata e sviluppata da <strong>Galileo Galilei</strong>, grazie all’uso del telescopio e all’applicazione del metodo sperimentale.</p>",
+    "<img src='assets/img/contents/Scenziati.jpg' alt='Scenziati' style='width:100%; max-width:400px;'>",
+    "<p>Galileo affermò che la natura è regolata da <strong>leggi matematiche</strong> e che la conoscenza deve basarsi su <strong>esperimento e verifica</strong>. Le sue idee entrarono in conflitto con la Chiesa, che nel 1633 lo processò e lo costrinse all’abiura.</p>",
+    "<p>Importanti contributi furono dati anche da <strong>Keplero</strong>, che formulò le leggi sul moto dei pianeti, e da <strong>Isaac Newton</strong>, che nel 1687 enunciò la legge di <strong>gravitazione universale</strong>, unificando i fenomeni terrestri e celesti in un’unica spiegazione scientifica.</p>",
+    "<p>La Rivoluzione Scientifica portò alla nascita del <strong>metodo scientifico</strong> moderno e pose le basi per l’Illuminismo e per lo sviluppo della scienza e della tecnologia nei secoli successivi.</p>"
+  ]
+},
+{
+  "titolo": "Rivoluzione Agricola",
+  "descrizione": "La Rivoluzione Agricola tra XVII e XVIII secolo trasformò le tecniche di coltivazione e aumentò la produttività, favorendo crescita demografica e sviluppo economico.",
+  "foto": "assets/img/RivoluzioneAgricola.jpg",
+  "periodo": "dal XVII al XVIII secolo",
+  "contenuto": [
+    "<p>Tra il Seicento e il Settecento, soprattutto in Inghilterra, si sviluppò la <strong>Rivoluzione Agricola</strong>, un insieme di innovazioni che modificarono profondamente l’organizzazione delle campagne e aumentarono la produzione di cibo.</p>",
+    "<p>Un elemento centrale fu il sistema delle <strong>enclosures</strong>, cioè la recinzione e l’accorpamento delle terre comuni, che rese l’agricoltura più efficiente ma costrinse molti contadini a lasciare le campagne.</p>",
+    "<img src='assets/img/contents/Contadini.jpg' alt='Contadini che lavorano' style='width:100%; max-width:400px;'>",
+    "<p>Si diffuse la <strong>Rotazione di Norfolk</strong>, che eliminava il maggese alternando cereali, legumi e foraggi, migliorando la fertilità del suolo. Furono introdotti nuovi strumenti agricoli e nuove tecniche di allevamento selettivo del bestiame.</p>",
+    "<p>L’aumento della produttività agricola provocò una <strong>crescita demografica</strong> e liberò manodopera che si trasferì nelle città, contribuendo allo sviluppo della <strong>Rivoluzione Industriale</strong>.</p>",
+    "<p>La Rivoluzione Agricola rappresentò quindi una trasformazione economica fondamentale, che pose le basi per i grandi cambiamenti sociali ed economici dell’età moderna.</p>"
+  ]
+}
+]
